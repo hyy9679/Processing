@@ -1,7 +1,7 @@
 ```java
 // Visualizing the Random function in Processing
 int[] rnums = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-
+float noiseNum = 0.0;
 void setup() {
   size(600,600);
   background(255); 
@@ -9,12 +9,11 @@ void setup() {
   line(50,500,550,500);
   fill(0);
   text("500",20,503);
-  getGaus();
 }
 
 void draw() {
   noStroke();
-  int rnum = int(abs(getGaus()));
+  int rnum = int(getGaus(noiseNum));
   switch(rnum) {
   case 1: 
     rnums[0] = rnums[0] + 1;
@@ -222,12 +221,11 @@ int numSort(int leadBy) {
   leadBy = leadBy - rnums[8];
   return leadBy;
 }
-float getGaus(){
-  float x = 0;
-  for (int y = 0; y < 10; y++) {
-    x = randomGaussian() * 19.01;     
-  }
-  println(x);
-  return x;
+
+float getGaus(float xoff){
+  noiseNum = xoff + 100.01;
+  float n = noise(xoff)*13.01;
+  print(n + "\n");
+  return n;
 }
 ```
