@@ -1,3 +1,6 @@
+# Visualizing Pi 
+Pi has been visualized in many ways. This approach illustrates the trends for each number 0-9 as it is being calculated. It attempts to show which number is "in the lead" and which number has the lead for the longest time until the first number hits 1000.
+
 ```java
 // Visualizing instances of numbers in Pi by Ken Kapptie
 import java.math.BigInteger;
