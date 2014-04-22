@@ -2,7 +2,7 @@
 Using the Pi visualization, this illustration can be used to see Java's default random funtion in action as well as Perlin noise and Gaussin random.
 
 ```java
-// Visualizing instances of numbers in Pi by Ken Kapptie
+// Visualizing randomness by Ken Kapptie
 
 // Keeps count of each digit
 int[] rNums = new int[10];
