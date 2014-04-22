@@ -6,10 +6,8 @@ Pi has been visualized in many ways. This approach illustrates the trends for ea
 import java.math.BigInteger;
 // Keeps count of each digit in Pi
 int[] rNums = new int[10];
-//int[] rNums = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 // Keeps count of digit with lead
 int[] lNums = new int[10];
-//int[] lNums = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 // Keeps count of digits in Pi
 int total = 0;
 
